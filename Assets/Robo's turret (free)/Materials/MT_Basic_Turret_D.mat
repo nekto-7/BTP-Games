@@ -1,0 +1,119 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: MT_Basic_Turret_D
+  m_Shader: {fileID: 4800000, guid: 0a073cb92d4913b488ad0024891e5c32, type: 3}
+  m_Parent: {fileID: 2100000, guid: 964ea7386bb741c47893fc6f78a3e2c1, type: 2}
+  m_ModifiedSerializedProperties: 2
+  m_ValidKeywords: []
+  m_InvalidKeywords:
+  - _DESATURATIONAFFECTSEMISSION_ON
+  - _EMISSION
+  - _METALLICGLOSSMAP
+  - _NORMALMAP
+  m_LightmapFlags: 2
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - Texture2D_519A50A3:
+        m_Texture: {fileID: 2800000, guid: aa40bf23d3fddf74fb6938f30b186ad1, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - Texture2D_8F86D962:
+        m_Texture: {fileID: 2800000, guid: 23c312060e40a684d92b5019231c50b8, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - Texture2D_94A73B0F:
+        m_Texture: {fileID: 2800000, guid: 2fd45427067e4f64885acedf7d9860f4, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - Texture2D_9E7EF63:
+        m_Texture: {fileID: 2800000, guid: ef48e06915b69994f913286d35186a84, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - Texture2D_A3D81D68:
+        m_Texture: {fileID: 2800000, guid: 09227661944a9bd41bb8d8783bf5a6fa, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - Texture2D_B9560831:
+        m_Texture: {fileID: 2800000, guid: 343258296855fce40b3a61fcbc21a013, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Albedo:
+        m_Texture: {fileID: 2800000, guid: aa40bf23d3fddf74fb6938f30b186ad1, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _BumpMap:
+        m_Texture: {fileID: 2800000, guid: 09227661944a9bd41bb8d8783bf5a6fa, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Colorhighlightmask:
+        m_Texture: {fileID: 2800000, guid: 2fd45427067e4f64885acedf7d9860f4, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _EmissionMap:
+        m_Texture: {fileID: 2800000, guid: 23c312060e40a684d92b5019231c50b8, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Emissive:
+        m_Texture: {fileID: 2800000, guid: 23c312060e40a684d92b5019231c50b8, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Flickermask:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: ef48e06915b69994f913286d35186a84, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MetalSmoothness:
+        m_Texture: {fileID: 2800000, guid: ef48e06915b69994f913286d35186a84, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MetallicGlossMap:
+        m_Texture: {fileID: 2800000, guid: ef48e06915b69994f913286d35186a84, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Normal:
+        m_Texture: {fileID: 2800000, guid: 09227661944a9bd41bb8d8783bf5a6fa, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Paintedmask:
+        m_Texture: {fileID: 2800000, guid: 343258296855fce40b3a61fcbc21a013, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Tintmask:
+        m_Texture: {fileID: 2800000, guid: 2fd45427067e4f64885acedf7d9860f4, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _Brightness: 1.75
+    - _Continuousflickering: 0
+    - _Flickering: 0
+    - _Flickeringintensity: 1
+    - _Fresnelfalloff: 2.01
+    - _Minimumsmoothness: 0.25
+    m_Colors:
+    - Color_70B5766E: {r: 7.1529403, g: 0.9852588, b: 0, a: 0}
+    - Color_D5189F39: {r: 0.6901961, g: 0.49901488, b: 0.33333334, a: 1}
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _EmissionColor: {r: 9.537255, g: 0.3137255, b: 0, a: 1}
+    - _Emissivecolor: {r: 2.1960785, g: 2.6509805, b: 2.337255, a: 0}
+    - _Fresnelcolor: {r: 4, g: 0, b: 0.36654472, a: 0}
+    - _Paintedcolor: {r: 0, g: 0.2368247, b: 0.8584906, a: 1}
+    - _Tint: {r: 0.45772517, g: 0.6981132, b: 0.69429755, a: 1}
+  m_BuildTextureStacks: []
