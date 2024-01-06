@@ -6,7 +6,6 @@ public class BulletSpawner : soundctl
     public Transform bulletSpawnPoint;  // Место, откуда будет выстрел
     public float timeBetweenSpawn = 1.0f;
     public Transform launcherModel;
-    
 
     private float shotCounter;
     private Tower theTower;
