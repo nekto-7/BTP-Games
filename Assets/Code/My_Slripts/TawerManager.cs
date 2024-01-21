@@ -13,9 +13,9 @@ public class TawerManager : MonoBehaviour//поставить башню находйась в тригере
         {
             if (Input.GetKeyDown(KeyCode.Alpha1) && flagTriger)
             {
-                if (Prog.Inst.pi.Score - price[0] >= 0)
+                if (Prog.Inst.Score - price[0] >= 0)
                 {
-                    Prog.Inst.pi.Score -= price[0];
+                    Prog.Inst.Score -= price[0];
                     Vector3 transformPoint = _tr.position;
                     transformPoint.y += 0;
 
@@ -32,9 +32,9 @@ public class TawerManager : MonoBehaviour//поставить башню находйась в тригере
             }
             if (Input.GetKeyDown(KeyCode.Alpha2) && flagTriger)
             {
-                if (Prog.Inst.pi.Score - price[1] >= 0)
+                if (Prog.Inst.Score - price[1] >= 0)
                 {
-                    Prog.Inst.pi.Score -= price[1];
+                    Prog.Inst.Score -= price[1];
                     Vector3 transformPoint = _tr.position;
                     transformPoint.y += 2.5f;
 

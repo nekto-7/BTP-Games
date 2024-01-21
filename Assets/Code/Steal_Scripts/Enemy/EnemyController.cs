@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class EnemyController : MonoBehaviour// ДВИЖЕНИЕ
@@ -23,9 +21,9 @@ public class EnemyController : MonoBehaviour// ДВИЖЕНИЕ
         if (theCastle == null)
         {
             theCastle = FindObjectOfType<Castle>();
-        }        
-        
-       attackCounter = timeBetweenAttacks;
+        }
+
+        attackCounter = timeBetweenAttacks;
     }
 
     void Update()
@@ -41,7 +39,7 @@ public class EnemyController : MonoBehaviour// ДВИЖЕНИЕ
                 if (currentPoint >= thePath.points.Length)
                 {
                     reachedEnd = true;
-                    selectedAttackPoint = Random.Range(0, theCastle.attackPoints.Length );
+                    selectedAttackPoint = Random.Range(0, theCastle.attackPoints.Length);
                 }
             }
         }
@@ -49,7 +47,7 @@ public class EnemyController : MonoBehaviour// ДВИЖЕНИЕ
         {
             transform.position = Vector3.MoveTowards(transform.position, theCastle.attackPoints[selectedAttackPoint].position, moveSpeed * Time.deltaTime);
             attackCounter -= Time.deltaTime;
-            if(attackCounter <= 0)
+            if (attackCounter <= 0)
             {
                 attackCounter = timeBetweenAttacks;
                 theCastle.TakeDamage(damagePerAttack);

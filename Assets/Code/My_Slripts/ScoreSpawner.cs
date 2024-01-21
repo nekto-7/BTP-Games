@@ -17,7 +17,7 @@ public class ScoreSpawner : soundctl
         while (true)
         {
             yield return new WaitForSeconds(time);
-            Prog.Inst.pi.Score++;
+            Prog.Inst.Score++;
         }
     }
 }
