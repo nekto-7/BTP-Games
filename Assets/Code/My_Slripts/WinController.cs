@@ -8,6 +8,7 @@ public class WinController : MonoBehaviour
     public int time = 10;
     private GameObject[] massiveObject;
     public SimpleEnemySpowner spowner;
+    public SimpleEnemySpowner spowner1;
     private void Start()
     {
         StartCoroutine(Timer());

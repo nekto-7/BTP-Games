@@ -147,7 +147,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f643f4d4bb1c504bbc5bfe460bddf69, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 30
+  moveSpeed: 10
   timeBetweenAttacks: 1
   damagePerAttack: 1
 --- !u!114 &6448928259567258016
@@ -162,6 +162,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e61e02464de5d04f805f3716cf47b32, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  totalHealth: 10
+  totalHealth: 20
   cubePrefab: {fileID: 2132740254886158411, guid: 7f251e2518df156449863ac4b4ff81e8, type: 3}
   explodeForce: 500

@@ -312,7 +312,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: a4381fac6bb92744b828ce94fb958d13, type: 3}
   bulletPrefab: {fileID: 6584359963013387267, guid: 4866ff86030cf4a4d8005206dfc8b130, type: 3}
   bulletSpawnPoint: {fileID: 785479749400108149}
-  timeBetweenSpawn: 3
+  timeBetweenSpawn: 2
   launcherModel: {fileID: 6947224760424623294}
 --- !u!114 &-4771924544845694524
 MonoBehaviour:
