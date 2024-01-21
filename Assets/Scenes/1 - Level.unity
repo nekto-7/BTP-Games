@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.4660946, g: 0.46579224, b: 0.46188897, a: 1}
+  m_IndirectSpecularColor: {r: 0.46613085, g: 0.4658302, b: 0.46192676, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -276,7 +276,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c9789eef169870498ae949d400e6d24, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startCoins: 100
+  startCoins: 1000
 --- !u!4 &31528719
 Transform:
   m_ObjectHideFlags: 0
@@ -1791,7 +1791,7 @@ GameObject:
   - component: {fileID: 1087979960}
   - component: {fileID: 1087979962}
   m_Layer: 0
-  m_Name: enemy spawner
+  m_Name: spawner
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1814,9 +1814,10 @@ MonoBehaviour:
   enemyToSpawn: {fileID: 8350815090162591572, guid: 17f9a93eabdf0b1488d216460a17f489, type: 3}
   spawnPoint: {fileID: 1087979961}
   timeBetweenSpawns: 5
-  amountToSpawn: 15
+  amountToSpawn: 16
   theCastle: {fileID: 1565911830}
   thePath: {fileID: 1004721737}
+  flag: 1
 --- !u!4 &1087979961
 Transform:
   m_ObjectHideFlags: 0
@@ -1825,7 +1826,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1087979959}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -53.110004, y: 25.66, z: -11.33}
+  m_LocalPosition: {x: -51.25, y: 25.66, z: -11.33}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2221,6 +2222,57 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: 247766e192f437c4680b63372b7cb017, type: 3}
+--- !u!1 &1207582478
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1207582480}
+  - component: {fileID: 1207582479}
+  m_Layer: 0
+  m_Name: WinController
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1207582479
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1207582478}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd77d018d1dcf8d4296fdcfca3079e8a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scene: 4
+  time: 10
+  spowner: {fileID: 1087979960}
+  spowner1: {fileID: 2054367457}
+  spowner2: {fileID: 0}
+  spowner3: {fileID: 0}
+  flag: 1
+--- !u!4 &1207582480
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1207582478}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -53.086002, y: 31.91, z: -11.392976}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1210592999
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3154,9 +3206,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0269aee421b266f429d4ed405e8ac190, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  totalHealth: 100
+  totalHealth: 15
   currentHealth: 0
-  scene: 0
+  scene: 3
   healthSlider: {fileID: 1346889085}
   attackPoints:
   - {fileID: 542025964}
@@ -4757,6 +4809,7 @@ Canvas:
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
+  m_VertexColorAlwaysGammaSpace: 0
   m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
@@ -4863,7 +4916,7 @@ GameObject:
   - component: {fileID: 2054367457}
   - component: {fileID: 2054367456}
   m_Layer: 0
-  m_Name: enemy spawner (1)
+  m_Name: Spawner max
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4979,12 +5032,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sounds:
   - {fileID: 8300000, guid: 50d202740162f9446b9fcddf6343e3f0, type: 3}
-  enemyToSpawn: {fileID: 8350815090162591572, guid: 17f9a93eabdf0b1488d216460a17f489, type: 3}
+  enemyToSpawn: {fileID: 8350815090162591572, guid: 8d18bb8a77faa3f438ed21e350826559, type: 3}
   spawnPoint: {fileID: 2054367458}
-  timeBetweenSpawns: 80
-  amountToSpawn: 1
+  timeBetweenSpawns: 75
+  amountToSpawn: 2
   theCastle: {fileID: 1565911830}
   thePath: {fileID: 1004721737}
+  flag: 0
 --- !u!4 &2054367458
 Transform:
   m_ObjectHideFlags: 0

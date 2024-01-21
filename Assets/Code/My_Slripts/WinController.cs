@@ -6,27 +6,51 @@ public class WinController : MonoBehaviour
 {
     public int scene;
     public int time = 10;
-    private GameObject[] massiveObject;
     public SimpleEnemySpowner spowner;
     public SimpleEnemySpowner spowner1;
+    public SimpleEnemySpowner spowner2;
+    public SimpleEnemySpowner spowner3;
+    public bool flag = true;
     private void Start()
     {
         StartCoroutine(Timer());
     }
+
     public void NextScene()
     {
-        massiveObject = GameObject.FindGameObjectsWithTag("Emeny");
-        if (massiveObject == null && spowner.amountToSpawn <= 0)
+        GameObject[] massiveObject = GameObject.FindGameObjectsWithTag("Enemy");
+        if(flag)
         {
-            SceneManager.LoadScene(scene);
+            if (massiveObject.Length == 0 && spowner != null && spowner1 != null)
+            {
+                if (spowner.amountToSpawn <= 0 && spowner1.amountToSpawn <= 0)
+                {
+                    Debug.Log(spowner.amountToSpawn); Debug.Log(spowner1.amountToSpawn);
+                    SceneManager.LoadScene(scene);
+                }
+            }
         }
+        else
+        {
+            if (massiveObject.Length == 0 && spowner != null && spowner1 != null && spowner2 != null && spowner3 != null)
+            {
+                if (spowner.amountToSpawn <= 0 && spowner1.amountToSpawn <= 0 && spowner2.amountToSpawn <= 0 && spowner3.amountToSpawn <= 0)
+                {
+                    Debug.Log(spowner.amountToSpawn); Debug.Log(spowner1.amountToSpawn);
+                    SceneManager.LoadScene(scene);
+                }
+            }
+        }
+
     }
+
     private IEnumerator Timer()
     {
         while (true)
         {
-            StartCoroutine(Timer());
             yield return new WaitForSeconds(time);
+            NextScene();
+            Debug.Log("/////////////////////////////////////////////////////////////////////");
         }
     }
 }

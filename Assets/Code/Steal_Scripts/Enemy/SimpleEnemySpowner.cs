@@ -1,5 +1,5 @@
 using System.Collections;
-using System.Collections.Generic;
+using UnityEditor.UIElements;
 using UnityEngine;
 
 public class SimpleEnemySpowner : soundctl
@@ -15,13 +15,16 @@ public class SimpleEnemySpowner : soundctl
 
     public Castle theCastle;
     public Path thePath;
-
+    public bool flag;
     void Start()
     {
         spawnCounter = timeBetweenSpawns;
-        Instantiate(enemyToSpawn, spawnPoint.position, spawnPoint.rotation).Setup(theCastle, thePath);
+        if(flag)
+        {
+            Instantiate(enemyToSpawn, spawnPoint.position, spawnPoint.rotation).Setup(theCastle, thePath);
+
+        }
         amountToSpawn--;
-        
     }
 
     void Update()
@@ -32,9 +35,12 @@ public class SimpleEnemySpowner : soundctl
             if (spawnCounter <= 0)
             {
                 spawnCounter = timeBetweenSpawns;
-                PlaySound(sounds[0]);
+                if (sounds != null && sounds.Length > 0)
+                {
+                    PlaySound(sounds[0]);
+                }
                 Instantiate(enemyToSpawn, spawnPoint.position, spawnPoint.rotation).Setup(theCastle, thePath);
-                amountToSpawn --;
+                amountToSpawn--;
             }
         }
 
