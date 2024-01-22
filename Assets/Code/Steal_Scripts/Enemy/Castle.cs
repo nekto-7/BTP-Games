@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -31,13 +29,12 @@ public class Castle : MonoBehaviour
     {
         currentHealth -= damageToTake;
 
-        if (currentHealth <= 0)
-        {
-            gameObject.SetActive(false);
-        }
         healthSlider.value = currentHealth;
-        if(totalHealth <= 0)
+        if (totalHealth <= 0)
         {
+            Prog.Inst.flagScene_3 = true;
+            Prog.Inst.SaveSettings();
+            Prog.Inst.OutputSave();
             SceneManager.LoadScene(scene);
         }
     }

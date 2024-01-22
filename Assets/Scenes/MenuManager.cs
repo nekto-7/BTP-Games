@@ -9,7 +9,10 @@ public class MenuManager : MonoBehaviour
     {
         progress.flagScene_2 = PlayerPrefs.GetInt("FlagScene_2") == 1 ? true : false;
         progress.flagScene_3 = PlayerPrefs.GetInt("FlagScene_3") == 1 ? true : false;
-        if(!progress.flagScene_2)
+        Debug.Log(progress.flagScene_3);
+        Debug.Log(progress.flagScene_2);
+        
+        if (!progress.flagScene_2)
         {
             butonScene[0].SetActive(false);
         }

@@ -149,7 +149,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 10
   timeBetweenAttacks: 1
-  damagePerAttack: 1
+  damagePerAttack: 2
 --- !u!114 &6448928259567258016
 MonoBehaviour:
   m_ObjectHideFlags: 0

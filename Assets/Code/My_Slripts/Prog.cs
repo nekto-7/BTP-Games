@@ -67,6 +67,8 @@ public class Prog : MonoBehaviour
         {
             int songValue = PlayerPrefs.GetInt("SongPerformance");
             SongWorked = songValue == 1 ? true : false;
+            flagScene_2 = PlayerPrefs.GetInt("FlagScene_2") == 1 ? true : false;
+            flagScene_3 = PlayerPrefs.GetInt("FlagScene_3") == 1 ? true : false;
         }
     }
 }

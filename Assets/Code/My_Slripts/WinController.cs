@@ -26,6 +26,10 @@ public class WinController : MonoBehaviour
                 if (spowner.amountToSpawn <= 0 && spowner1.amountToSpawn <= 0)
                 {
                     Debug.Log(spowner.amountToSpawn); Debug.Log(spowner1.amountToSpawn);
+                    Prog.Inst.flagScene_2 = true;
+                    Prog.Inst.SaveSettings();
+                    Prog.Inst.OutputSave();
+                    Debug.Log(spowner.amountToSpawn); Debug.Log(spowner1.amountToSpawn);
                     SceneManager.LoadScene(scene);
                 }
             }
@@ -36,12 +40,15 @@ public class WinController : MonoBehaviour
             {
                 if (spowner.amountToSpawn <= 0 && spowner1.amountToSpawn <= 0 && spowner2.amountToSpawn <= 0 && spowner3.amountToSpawn <= 0)
                 {
+                    Prog.Inst.flagScene_2 = true;
+                    Prog.Inst.SaveSettings();
+                    Prog.Inst.OutputSave();
                     Debug.Log(spowner.amountToSpawn); Debug.Log(spowner1.amountToSpawn);
                     SceneManager.LoadScene(scene);
+
                 }
             }
         }
-
     }
 
     private IEnumerator Timer()

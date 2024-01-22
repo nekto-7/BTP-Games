@@ -220,7 +220,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 38698356ebd414843b22da8cc6ab5ce5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  time: 26.3
+  time: 2
   indexScene: 2
 --- !u!4 &1147400919
 Transform:

@@ -1551,7 +1551,7 @@ MonoBehaviour:
   enemyToSpawn: {fileID: 8350815090162591572, guid: 259f3a365d455af4f88473f2d57f2ff8, type: 3}
   spawnPoint: {fileID: 257425133}
   timeBetweenSpawns: 5
-  amountToSpawn: 16
+  amountToSpawn: 1
   theCastle: {fileID: 349143906}
   thePath: {fileID: 212352670}
   flag: 0
@@ -1797,7 +1797,7 @@ MonoBehaviour:
   enemyToSpawn: {fileID: 8350815090162591572, guid: 259f3a365d455af4f88473f2d57f2ff8, type: 3}
   spawnPoint: {fileID: 274506478}
   timeBetweenSpawns: 5
-  amountToSpawn: 16
+  amountToSpawn: 1
   theCastle: {fileID: 349143906}
   thePath: {fileID: 212352670}
   flag: 0
@@ -2327,7 +2327,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0269aee421b266f429d4ed405e8ac190, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  totalHealth: 50
+  totalHealth: 1
   currentHealth: 0
   scene: 0
   healthSlider: {fileID: 1116130611}
